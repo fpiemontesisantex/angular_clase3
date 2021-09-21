@@ -1,0 +1,20 @@
+<div>
+    <p *ngFor="let elemento of listado">
+        {{ elemento }}
+    </p>
+    
+    <select>
+        <option *ngFor="let elemento of listado">
+            {{ elemento }}
+        </option>
+    </select>
+
+    <select>
+        <option *ngFor="let persona of listadoPersona; let i = index">
+            Posicion: {{ i }}
+            {{ persona.nombre }}
+            -
+            {{ persona.apellido }}
+        </option>
+    </select>
+</div>

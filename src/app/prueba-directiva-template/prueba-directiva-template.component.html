@@ -1,0 +1,8 @@
+<p *ngIf="true else templateElse">prueba-directiva-template works!</p>
+
+<input #miInput value="valor input" />
+
+<ng-template #templateElse>
+    BLOQUE ELSE
+    {{ miInput.value }}
+</ng-template>

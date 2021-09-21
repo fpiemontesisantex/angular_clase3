@@ -1,0 +1,7 @@
+<select>
+    <option *ngFor="let elemento of listado" [ngSwitch]="elemento.apellido">
+        {{ elemento.nombre }} {{ elemento.apellido }}
+        <p *ngSwitchCase="'Juarez'"> - Campeon </p>
+        <p *ngSwitchDefault> - Perdedor </p>
+    </option>
+</select>
